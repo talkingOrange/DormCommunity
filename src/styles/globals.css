@@ -1,70 +1,11 @@
-/* 모바일 화면 */
-html {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-p {
-  margin-bottom: 1em;
+:root {
+  @apply h-full bg-black;
 }
 
 body {
-  font-size: 16px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-.active {
-  color: tomato;
-  text-decoration: none;
-}
-
-/* 태블릿 화면 */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* 데스크톱 화면 */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    font-size: 22px;
-  }
+  @apply h-full bg-black;
 }

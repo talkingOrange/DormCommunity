@@ -1,13 +1,16 @@
-import React from "react";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 import { AppProps } from "next/app";
 import "../styles/globals.css";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
   return (
-    <div>
-      <NavBar />
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
